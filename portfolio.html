@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon"  href="./assets/flower.png" />
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo"> <img src="./assets/flower.png"> MENNATULLAH </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger">
+        <div class="logo"> <img src="./assets/flower.png"> MENNATULLAH </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__Pic-container">
+            <img src="./assets/profile-pic.jpg">
+        </div>
+        <div class="section__text">
+            <p class="p1">Hello, I'm</p>
+            <h1 class="title">Mennatullah Nabil</h1>
+            <p class="p2">Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/MennasResume.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="social-container">
+            <img src="./assets/linkedin.png" class="icon" onclick="window.open('https://www.linkedin.com/in/mennatullah-nabil-996038197/')">
+            <img src="./assets/github.png" class="icon" onclick="window.open('https://github.com/Menna-T-ullah')">
+        </div>
+    </div>
+    </section>
+    <section id="about">
+        <p class="p2">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__Pic-container2">
+                <img src="./assets/about-pic.png" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="" class="small-icon">
+                        <h1>experience</h1>
+                        <p>Freshgradute <br> Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="" class="small-icon">
+                        <h1>Education</h1>
+                        <p>B.CS. Bachelors</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I graduated from Software Industry and Multimedia, Alexandria
+                        University, Faculty of Science. I also took Web development using CMS
+                        track in ITI internship. I am eager to use my technical and personals
+                        skills in real life projects and challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class="icon-arrow" onclick="location.href='#skills'">
+    </section>
+    <section id="skills">
+        <p class="p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-subtitles">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-subtitles">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>Mysql</h3>
+                                <p>experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>GIT</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class="icon-arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <p class="p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" class="project-img">
+                    </div>
+                    <h2 class="skills-subtitles project-title">Landing page</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Menna-T-ullah')">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Menna-T-ullah')">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" class="project-img">
+                    </div>
+                    <h2 class="skills-subtitles project-title">Class Manegment</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Menna-T-ullah')">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Menna-T-ullah')">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" class="project-img">
+                    </div>
+                    <h2 class="skills-subtitles project-title">Login page</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Menna-T-ullah')">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Menna-T-ullah')">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class="icon-arrow" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+            <p class="p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" class="icon contact-icon email-icon">
+                    <p><a href="mailto:examplemail@gmail.com">mennanabil4@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/mennatullah-nabil-996038197/">LinkedIn</a></p>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &copy; 2023 mennatullah Nabil. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu(){
+        const menu= document.querySelector(".menu-links");
+        const icon= document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+    }
+    </script>
+</body>
+</html>
